@@ -11,6 +11,11 @@ class Program
         Console.WriteLine("Введите второе число:");
         double b = double.Parse(Console.ReadLine()!);
 
-        Console.WriteLine($"Результат сложения: {a + b}");
+        Console.WriteLine("Выберите операцию (+, *):");
+        string operation = Console.ReadLine()!;
+
+        double result = operation == "+" ? a + b : a * b;
+
+        Console.WriteLine($"Результат: {result}");
     }
 }
