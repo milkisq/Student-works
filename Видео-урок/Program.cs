@@ -16,6 +16,6 @@ class Program
 
         double result = operation == "+" ? a + b : a * b;
 
-        Console.WriteLine($"Итог общий: {result}");
+        Console.WriteLine($"Результат операции: {result}");
     }
 }
